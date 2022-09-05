@@ -1,6 +1,6 @@
 package com.irinayanushkevich.practice;
 
-import java.util.Arrays;
+import java.util.TreeSet;
 
 class Task2 {
 
@@ -17,23 +17,21 @@ class Task2 {
     public static void main(String[] args) {
 
         int[] array = {4, 5, 6, 6, 8};
-        //int[] array = {4, 5, 6, 7, 8};
-        boolean result;
-
-        Arrays.sort(array);
-        result = findDuplicate(array);
-
-        System.out.println(result);
-
+        // int[] array = {4, 5, 6, 7, 8};
+        System.out.println(findDuplicate(array));
     }
 
     public static boolean findDuplicate(int[] array) {
 
-        for (int i = 0; i < array.length - 1; i++) {
-            if (array[i] == array[i + 1]) {
-                return true;
+        TreeSet<Integer> s = new TreeSet<>();
+        boolean result = false;
+
+        for (int element : array) {
+            if (!s.add(element)) {
+                result = true;
+                break;
             }
         }
-        return false;
+        return result;
     }
 }
