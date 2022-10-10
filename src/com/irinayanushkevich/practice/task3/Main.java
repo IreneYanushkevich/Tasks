@@ -15,11 +15,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Foo1 foo = new Foo1();
+        Foo2 foo2 = new Foo2();
 
         new Thread(() -> {
             try {
-                foo.third(() -> System.out.print("third"));
+                foo2.third(() -> System.out.print("third"));
             } catch (InterruptedException e) {
                 e.getStackTrace();
             }
@@ -27,7 +27,7 @@ public class Main {
 
         new Thread(() -> {
             try {
-                foo.second(() -> System.out.print("second"));
+                foo2.second(() -> System.out.print("second"));
             } catch (InterruptedException e) {
                 e.getStackTrace();
             }
@@ -35,7 +35,7 @@ public class Main {
 
         new Thread(() -> {
             try {
-                foo.first(() -> System.out.print("first"));
+                foo2.first(() -> System.out.print("first"));
             } catch (InterruptedException e) {
                 e.getStackTrace();
             }
