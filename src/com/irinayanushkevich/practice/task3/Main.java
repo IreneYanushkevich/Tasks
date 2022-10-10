@@ -1,4 +1,4 @@
-package com.irinayanushkevich.practice.task3.task3_1;
+package com.irinayanushkevich.practice.task3;
 
 /* Дан класс:
    public class Foo {
@@ -15,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Foo foo = new Foo();
+        Foo1 foo = new Foo1();
 
         new Thread(() -> {
             try {

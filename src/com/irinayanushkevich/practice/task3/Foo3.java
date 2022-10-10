@@ -1,4 +1,4 @@
-package com.irinayanushkevich.practice.task3_3;
+package com.irinayanushkevich.practice.task3;
 
 public class Foo3 {
 

@@ -1,8 +1,8 @@
-package com.irinayanushkevich.practice.task3.task3_1;
+package com.irinayanushkevich.practice.task3;
 
 import java.util.concurrent.*;
 
-public class Foo {
+public class Foo1 {
 
     private final CountDownLatch cdl = new CountDownLatch(2);
 

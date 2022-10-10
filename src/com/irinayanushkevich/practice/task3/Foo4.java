@@ -1,4 +1,4 @@
-package com.irinayanushkevich.practice.task3_4;
+package com.irinayanushkevich.practice.task3;
 
 import java.util.concurrent.Semaphore;
 
