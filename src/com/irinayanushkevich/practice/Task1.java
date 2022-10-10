@@ -87,6 +87,7 @@ class Task1 {
                 break;
             }
         }
+
         for (Map.Entry<Integer, Integer> element : set) {
             if (element.getValue().equals(temp.getValue())) {
                 indexes[1] = element.getKey();
