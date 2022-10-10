@@ -4,7 +4,6 @@ import java.util.concurrent.Phaser;
 
 public class Foo2 {
     private final Phaser phaser = new Phaser(3);
-
     public void first(Runnable r) throws InterruptedException {
         phaser.arrive();
         phaser.awaitAdvance(0);
