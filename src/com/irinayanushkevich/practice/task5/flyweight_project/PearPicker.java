@@ -1,4 +1,4 @@
-package com.irinayanushkevich.practice.task5.flyweight;
+package com.irinayanushkevich.practice.task5.flyweight_project;
 
 public class PearPicker implements HarvestPicker {
     @Override

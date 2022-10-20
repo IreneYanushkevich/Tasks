@@ -1,4 +1,4 @@
-package com.irinayanushkevich.practice.task5.flyweight;
+package com.irinayanushkevich.practice.task5.flyweight_project;
 
 import java.util.HashMap;
 import java.util.Map;

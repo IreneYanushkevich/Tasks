@@ -1,6 +1,4 @@
-package com.irinayanushkevich.practice.task5.flyweight;
-
-import com.irinayanushkevich.practice.task5.singleton_project.PhoneBook;
+package com.irinayanushkevich.practice.task5.flyweight_project;
 
 import java.util.ArrayList;
 import java.util.List;
