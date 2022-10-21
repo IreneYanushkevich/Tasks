@@ -3,6 +3,7 @@ package com.irinayanushkevich.practice.task3;
 import java.util.concurrent.Phaser;
 
 public class Foo2 {
+
     private final Phaser phaser = new Phaser(3);
     public void first(Runnable r) throws InterruptedException {
         phaser.arrive();
@@ -10,6 +11,7 @@ public class Foo2 {
         r.run();
         phaser.arrive();
         phaser.arrive();
+        phaser.arriveAndDeregister();
     }
 
     public void second(Runnable r) throws InterruptedException {

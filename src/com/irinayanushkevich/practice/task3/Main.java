@@ -11,9 +11,13 @@ second(). Поток С - third(). Необходимо реализовать �
 будут вызваны в правильном порядке. Пример: Вывод: "firstsecondthird". Мы не знаем, в каком порядке будут вызваны методы,
 но должны гарантировать порядок.  */
 
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionService;
+import java.util.concurrent.ExecutionException;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         Foo2 foo2 = new Foo2();
 

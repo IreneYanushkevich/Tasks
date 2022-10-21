@@ -2,7 +2,7 @@ package com.irinayanushkevich.practice.task3;
 
 public class Foo3 {
 
-    public int count;
+    private  int count;
 
     public Foo3() {
         this.count = 1;

@@ -1,6 +1,7 @@
 package com.irinayanushkevich.practice.task3;
 
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class Foo4 {
 
@@ -10,6 +11,7 @@ public class Foo4 {
     public void first(Runnable r) {
        r.run();
        s1.release();
+        Thread.interrupted();
     }
 
     public void second(Runnable r) throws InterruptedException {
