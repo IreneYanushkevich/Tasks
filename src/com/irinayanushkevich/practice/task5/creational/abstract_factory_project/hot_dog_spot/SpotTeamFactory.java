@@ -1,11 +1,11 @@
 package com.irinayanushkevich.practice.task5.creational.abstract_factory_project.hot_dog_spot;
 
 import com.irinayanushkevich.practice.task5.creational.abstract_factory_project.Cook;
-import com.irinayanushkevich.practice.task5.creational.abstract_factory_project.CatheringTeamFactory;
+import com.irinayanushkevich.practice.task5.creational.abstract_factory_project.CateringTeamFactory;
 import com.irinayanushkevich.practice.task5.creational.abstract_factory_project.Manager;
 import com.irinayanushkevich.practice.task5.creational.abstract_factory_project.Waiter;
 
-public class SpotTeamFactory implements CatheringTeamFactory {
+public class SpotTeamFactory implements CateringTeamFactory {
     @Override
     public Manager getManager() {
         return new SpotManager();
